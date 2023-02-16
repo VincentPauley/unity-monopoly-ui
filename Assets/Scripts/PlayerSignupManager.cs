@@ -10,25 +10,14 @@ public class PlayerSignupManager : MonoBehaviour
 
         Button homeButton = uiRoot.Q<Button>("HomeButton");
 
-        homeButton.clicked += () => clicked();
+        homeButton.clicked += () => HandleHomeRequest();
+
+        TextField playerEntry = uiRoot.Q<TextField>("PlayerEntry");
+
+        playerEntry.style.opacity = 100; // dis makes it show up!!!!
     }
 
-    private void clicked() {
-        Debug.Log("I called something!");
-
-
+    private void HandleHomeRequest() {
         SceneManager.enterHomeScene();
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void HandleHomeRequest() {
-        Debug.Log("I want to go home!");
     }
 }
