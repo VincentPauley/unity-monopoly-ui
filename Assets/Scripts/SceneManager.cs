@@ -9,4 +9,9 @@ public class SceneManager : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("PlayerSignup");
     }
+
+    public static void enterHomeScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Home");
+    }
 }

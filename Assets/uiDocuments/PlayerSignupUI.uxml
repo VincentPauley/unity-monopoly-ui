@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement>
+        <ui:VisualElement name="Header">
+            <ui:Button text="Home" display-tooltip-when-elided="true" name="HomeButton" style="width: 100px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Container">
+            <ui:Button text="Add Player" display-tooltip-when-elided="true" name="AddPlayer" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
